@@ -25,3 +25,6 @@ Route::get('/admin/dashboard', function () {
 Route::get('/admin/about', function () {
     return view('admin.about');
 });
+use App\Http\Controllers\StudentController;
+
+Route::get('/admin/student', [StudentController::class, 'index']);
