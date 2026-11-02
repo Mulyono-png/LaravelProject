@@ -11,9 +11,18 @@ class AboutController extends Controller
      */
     public function index()
     {
-         return view('admin.dashboard', [
-            'title' => 'Dashboard Admin',
-            'content' => 'Selamat Datang di Halaman Dashboard!',
+        $students = [
+            ['nis' => '20260001', 'name' => 'Ahmad Fauzan', 'class' => 'XI PPLG 1', 'status' => 'Active'],
+            ['nis' => '20260002', 'name' => 'Muhammad Rizky', 'class' => 'XI PPLG 2', 'status' => 'Active'],
+            ['nis' => '20260003', 'name' => 'Bagus Setiawan', 'class' => 'XI PPLG 1', 'status' => 'Active'],
+            ['nis' => '20260004', 'name' => 'Dimas Pratama', 'class' => 'X PPLG 1', 'status' => 'Inactive'],
+            ['nis' => '20260005', 'name' => 'Rizky Ramadhan', 'class' => 'X PPLG 2', 'status' => 'Active'],
+        ];
+
+        return view('admin.about', [
+            'title' => 'About Siswa',
+            'subtitle' => 'Kelola data siswa.',
+            'students' => $students,
         ]);
     }
 
