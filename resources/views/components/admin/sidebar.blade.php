@@ -61,6 +61,28 @@
                         <span class="ml-3">Classroom</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.teacher.index') }}"
+                        class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg aria-hidden="true"
+                            class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 10a4 4 0 100-8 4 4 0 000 8zm-7 8a7 7 0 1114 0H3zm12-7.5a5 5 0 014 4.9V18h-2.1a8.9 8.9 0 00-1.9-7.5z"></path>
+                        </svg>
+                        <span class="ml-3">Teacher</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ route('admin.subject.index') }}"
+                        class="flex items-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                        <svg aria-hidden="true"
+                            class="w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 3.5A1.5 1.5 0 014.5 2H17v14H5a2 2 0 00-2 2V3.5zM5 18h12v-1H5a.5.5 0 000 1zm1-12h8v1H6V6zm0 3h8v1H6V9z"></path>
+                        </svg>
+                        <span class="ml-3">Subject</span>
+                    </a>
+                </li>
             </ul>
         </div>
     </aside>

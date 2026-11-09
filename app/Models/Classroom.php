@@ -13,4 +13,9 @@ class Classroom extends Model
         'name',
         'major',
     ];
+
+    public function students()
+    {
+        return $this->hasMany(Student::class, 'classroom_id');
+    }
 }

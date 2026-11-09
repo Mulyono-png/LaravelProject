@@ -21,6 +21,8 @@ class StudentPageTest extends TestCase
             ->assertSee('Ahmad Fauzan')
             ->assertSee('Muhammad Rizky')
             ->assertSee('Gita Gutawa')
+            ->assertSee('Teacher')
+            ->assertSee('Subject')
             ->assertSee('Active');
 
         $this->assertDatabaseCount('students', 10);

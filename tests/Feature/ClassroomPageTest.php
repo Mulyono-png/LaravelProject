@@ -25,12 +25,14 @@ class ClassroomPageTest extends TestCase
             ->assertOk()
             ->assertSee('XI PPLG 1')
             ->assertSee('XI PPLG 2')
+            ->assertSee('XI PPLG 3')
             ->assertSee('X PPLG 1')
             ->assertSee('X PPLG 2')
+            ->assertSee('X PPLG 3')
             ->assertDontSee('DKV')
             ->assertDontSee('ANIMASI')
             ->assertSee('PPLG');
 
-        $this->assertDatabaseCount('classrooms', 4);
+        $this->assertDatabaseCount('classrooms', 6);
     }
 }

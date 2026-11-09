@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\Classroom;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class ClassroomSeeder extends Seeder
@@ -13,8 +12,10 @@ class ClassroomSeeder extends Seeder
         $classrooms = [
             ['name' => 'XI PPLG 1', 'major' => 'PPLG'],
             ['name' => 'XI PPLG 2', 'major' => 'PPLG'],
+            ['name' => 'XI PPLG 3', 'major' => 'PPLG'],
             ['name' => 'X PPLG 1', 'major' => 'PPLG'],
             ['name' => 'X PPLG 2', 'major' => 'PPLG'],
+            ['name' => 'X PPLG 3', 'major' => 'PPLG'],
         ];
 
         Classroom::query()
